@@ -1,8 +1,14 @@
 script LittlerootTown_EventScript_DevSquirtle {
 	lockall
 	msgbox(format("I'm your helpful Dev Squirtle! You can warp to the Sub. Sapph. version of Pacifidlog right up this vine."))
+	if (flag(FLAG_BADGE05_GET) == false) {
+		msgbox("The result is true")
+	}
+	else {
+		msgbox("The result is false.")
+	}
+
 	releaseall
-	
 }
 
 raw `
