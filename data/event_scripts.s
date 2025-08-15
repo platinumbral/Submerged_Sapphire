@@ -1159,3 +1159,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 
 	.include "data/maps/SubSap_PacifidlogTown/scripts.inc"
+
+	.include "data/maps/SubSap_PacifidlogTown_2/scripts.inc"
