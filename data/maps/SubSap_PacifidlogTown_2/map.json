@@ -14,16 +14,7 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [],
-  "warp_events": [
-    {
-      "warp_id": "TEMP_WARP_LITTLEROOT",
-      "x": 23,
-      "y": 23,
-      "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN",
-      "dest_warp_id": "TEMP_WARP_SUBSAP_PACIFIDLOG_2"
-    }
-  ],
+  "warp_events": [],
   "coord_events": [],
   "bg_events": []
 }

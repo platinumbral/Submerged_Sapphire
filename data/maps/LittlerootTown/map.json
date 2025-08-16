@@ -166,11 +166,11 @@
       "dest_warp_id": "0"
     },
     {
-      "warp_id": "TEMP_WARP_SUBSAP_PACIFIDLOG_2",
+      "warp_id": "TEMP_WARP_SUBSAP_PACIFIDLOG",
       "x": 5,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_SUB_SAP_PACIFIDLOG_TOWN_2",
+      "dest_map": "MAP_SUB_SAP_PACIFIDLOG_TOWN",
       "dest_warp_id": "TEMP_WARP_LITTLEROOT"
     }
   ],

@@ -143,6 +143,12 @@
       "map": "MAP_SUB_SAP_PACIFIDLOG_TOWN_2",
       "x": 16,
       "y": 17
+    },
+    {
+      "id": "HEAL_LOCATION_SUB_SAP_PACIFIDLOG_TOWN",
+      "map": "MAP_SUB_SAP_PACIFIDLOG_TOWN",
+      "x": 16,
+      "y": 17
     }
   ]
 }
