@@ -1,1 +1,27 @@
 mapscripts PacifidlogTown_Pokemart_MapScripts {}
+
+script PacifidlogTown_Pokemart_EventScript_Boy {
+    lock
+    faceplayer
+    msgbox(format("Apparently Pacifidlog Town didn't always have a Poké Mart. Once the lab was built, the people here decided to build a Poké Mart too."))
+    release
+}
+
+script PacifidlogTown_Pokemart_Employee {
+    lock
+    message("Welcome in {PLAYER}, how can I help you today?")
+    waitmessage
+    pokemart(PacifidlogItems)
+    message("Stop by again soon!")
+    release
+}
+
+mart PacifidlogItems {
+    ITEM_POKE_BALL
+    ITEM_DIVE_BALL
+    ITEM_NET_BALL
+    ITEM_POTION
+    ITEM_FULL_HEAL
+    ITEM_MAX_REPEL
+    ITEM_RARE_CANDY
+}

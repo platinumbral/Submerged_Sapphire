@@ -1,22 +1,22 @@
 mapscripts PacifidlogTown_ProfessorLab_MapScripts {}
 
 script PacifidlogTown_ProfessorLab_EventScript_Professor {
-    lockall
+    lock
     faceplayer
     msgbox(format("Hello {PLAYER}! The Corsola seem to be doing well today!"))
-    releaseall
+    release
 }
 
 script PacifidlogTown_ProfessorLab_EventScript_Aide1 {
-    lockall
+    lock
     faceplayer
     msgbox(format("I know the work we do here is important to keep the Corsola healthy, but I wish the seawater didn't spray all over my papers..."))
-    releaseall
+    release
 }
 
 script PacifidlogTown_ProfessorLab_EventScript_Aide2 {
-    lockall
+    lock
     faceplayer
     msgbox(format("A long time ago, Mareanie didn't live in Hoenn. But now, they've been spread head to Pacifidlog, and pose a real threat to our Corsola colony. "))
-    releaseall
+    release
 }

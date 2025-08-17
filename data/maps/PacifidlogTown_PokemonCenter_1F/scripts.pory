@@ -1,7 +1,7 @@
 script PacifidlogTown_PokemonCenter_EventScript_GameboyKid {
-	lockall
+	lock
 	msgbox(format("Hey {PLAYER}, I hear you're setting out on a journey soon. I'm so jealous! I wish I had Pokemon of my own..."))
-	releaseall
+	release
 }
 raw `
 PacifidlogTown_PokemonCenter_1F_MapScripts::

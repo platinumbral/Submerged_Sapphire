@@ -4,37 +4,37 @@ PacifidlogTown_ProfessorLab_MapScripts::
 
 PacifidlogTown_ProfessorLab_EventScript_Professor::
 # 4 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	lockall
+	lock
 # 5 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	faceplayer
 # 6 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	msgbox PacifidlogTown_ProfessorLab_EventScript_Professor_Text_0
 # 7 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	releaseall
+	release
 	return
 
 
 PacifidlogTown_ProfessorLab_EventScript_Aide1::
 # 11 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	lockall
+	lock
 # 12 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	faceplayer
 # 13 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	msgbox PacifidlogTown_ProfessorLab_EventScript_Aide1_Text_0
 # 14 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	releaseall
+	release
 	return
 
 
 PacifidlogTown_ProfessorLab_EventScript_Aide2::
 # 18 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	lockall
+	lock
 # 19 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	faceplayer
 # 20 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	msgbox PacifidlogTown_ProfessorLab_EventScript_Aide2_Text_0
 # 21 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	releaseall
+	release
 	return
 
 

@@ -1,3 +1,14 @@
+script SubSat_PacifidlogTown_Fisherman{
+	lock
+	faceplayer
+	msgbox(format("Our town is reliant on the sea, so we've got to give it the care it deserves."))
+	if (checkitem(ITEM_SUPER_ROD) == FALSE) {
+		msgbox(format("Oh, you're leaving soon, aren't you {PLAYER}? I've got a spare Super Rod laying around, I'm sure it'll come in handy!"))
+		giveitem(ITEM_SUPER_ROD)
+	}
+	release
+}
+
 raw `
 SubSap_PacifidlogTown_MapScripts::
 	.byte 0
