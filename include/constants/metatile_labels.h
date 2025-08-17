@@ -380,6 +380,7 @@
 #define METATILE_Pacifidlog_HalfSubmergedLogs_HorizontalRight  0x253
 #define METATILE_Pacifidlog_HalfSubmergedLogs_VerticalBottom   0x261
 #define METATILE_Pacifidlog_HalfSubmergedLogs_VerticalTop      0x259
+#define METATILE_Pacifidlog_ShallowWaterEncounter              0x2D2
 #define METATILE_Pacifidlog_SkyPillar_CrackedFloor_Hole        0x237
 #define METATILE_Pacifidlog_SkyPillar_DoorOpen_Bottom          0x2B2
 #define METATILE_Pacifidlog_SkyPillar_DoorOpen_Top             0x2AA
