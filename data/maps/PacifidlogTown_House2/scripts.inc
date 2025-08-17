@@ -5,6 +5,8 @@ PacifidlogTown_House2_girl::
 	faceplayer
 # 4 "data/maps/PacifidlogTown_House2/scripts.pory"
 	msgbox PacifidlogTown_House2_girl_Text_0
+# 5 "data/maps/PacifidlogTown_House2/scripts.pory"
+	release
 	return
 
 

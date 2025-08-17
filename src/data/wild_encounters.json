@@ -11576,17 +11576,17 @@
               {
                 "min_level": 3,
                 "max_level": 4,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_WATTREL"
               },
               {
                 "min_level": 3,
                 "max_level": 4,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_WATTREL"
               },
               {
                 "min_level": 3,
                 "max_level": 4,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_WATTREL"
               }
             ]
           },
@@ -11642,6 +11642,160 @@
                 "min_level": 3,
                 "max_level": 4,
                 "species": "SPECIES_MAREANIE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SUB_SAP_ROUTE131",
+          "base_label": "gSubSap_Route131",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_TENTACOOL"
+              },
+              {
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_WATTREL"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_WATTREL"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_WATTREL"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_WATTREL"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_LUVDISC"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_WAILMER"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_WAILMER"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_WAILMER"
               }
             ]
           }

@@ -81,18 +81,22 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-=== TRAINER_SAWYER_1 ===
-Name: SAWYER
-Class: Hiker
-Pic: Hiker
-Gender: Male
-Music: Hiker
+=== TRAINER_ROUTE131_SWIMMER_OPHELIA ===
+Name: Ophelia
+Class: Swimmer F
+Pic: Swimmer F
+Gender: Female
+Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Geodude
-Level: 21
+Luvdisc
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Gun
+- Surf
+- Whirlpool
+- Charm
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
 Name: GRUNT

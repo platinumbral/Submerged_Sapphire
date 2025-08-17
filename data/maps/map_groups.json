@@ -627,6 +627,7 @@
     "Route124_DivingTreasureHuntersHouse"
   ],
   "gMapGroup_SubSap_TownsAndRoutes": [
-    "SubSap_PacifidlogTown"
+    "SubSap_PacifidlogTown",
+    "SubSap_Route131"
   ]
 }

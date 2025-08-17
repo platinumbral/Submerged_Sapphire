@@ -4460,6 +4460,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/PacifidlogTown_PlayerHouse/border.bin",
       "blockdata_filepath": "data/layouts/PacifidlogTown_PlayerHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUB_SAP_ROUTE131",
+      "name": "SubSap_Route131_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/SubSap_Route131/border.bin",
+      "blockdata_filepath": "data/layouts/SubSap_Route131/map.bin"
     }
   ]
 }

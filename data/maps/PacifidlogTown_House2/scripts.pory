@@ -1,7 +1,7 @@
 script PacifidlogTown_House2_girl {
 	lock
 	faceplayer
-	msgbox(format("Can you believe some people used to think Hoenn had too much water before Kyogre woke up? I wonder what they think now?"))\
+	msgbox(format("Can you believe some people used to think Hoenn had too much water before Kyogre woke up? I wonder what they think now?"))
 	release
 }
 

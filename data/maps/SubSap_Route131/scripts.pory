@@ -1,0 +1,20 @@
+mapscripts SubSap_Route131_MapScripts {}
+
+script SubSap_Route131_SwimmerOphelia {
+    trainerbattle_single(TRAINER_ROUTE131_SWIMMER_OPHELIA, SwimmerOphelia_Intro, SwimmerOphelia_Outro)
+    msgbox(SwimmerOphelia_PostBattle, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
+
+text SwimmerOphelia_Intro {
+    "Oh hi {PLAYER}! You have a Pokémon now, right? Let's battle!"
+}
+
+text SwimmerOphelia_Outro {
+    "Wow, you're really good! I need to train harder!"
+}
+
+text SwimmerOphelia_PostBattle {
+    "You'll have no trouble making it to Ever Grande City!"
+}
