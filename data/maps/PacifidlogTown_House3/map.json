@@ -46,15 +46,15 @@
       "x": 4,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_PACIFIDLOG_TOWN",
-      "dest_warp_id": "3"
+      "dest_map": "MAP_SUB_SAP_PACIFIDLOG_TOWN",
+      "dest_warp_id": "HOUSE3"
     },
     {
       "x": 5,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_PACIFIDLOG_TOWN",
-      "dest_warp_id": "3"
+      "dest_map": "MAP_SUB_SAP_PACIFIDLOG_TOWN",
+      "dest_warp_id": "HOUSE3"
     }
   ],
   "coord_events": [],

@@ -59,15 +59,15 @@
       "x": 4,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_PACIFIDLOG_TOWN",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_SUB_SAP_PACIFIDLOG_TOWN",
+      "dest_warp_id": "RIVAL_HOME"
     },
     {
       "x": 5,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_PACIFIDLOG_TOWN",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_SUB_SAP_PACIFIDLOG_TOWN",
+      "dest_warp_id": "RIVAL_HOME"
     }
   ],
   "coord_events": [],
