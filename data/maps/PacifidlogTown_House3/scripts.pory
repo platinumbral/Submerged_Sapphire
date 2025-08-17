@@ -1,3 +1,10 @@
+script PacifidlogTown_House3_Woman {
+	lock
+	faceplayer
+	msgbox(format("Hey {PLAYER}, do you ever get tired of fish? I know we're pretty fortunate here in Pacifidlog, but I'd like some variety every now and then."))
+	release
+}
+
 raw `
 PacifidlogTown_House3_MapScripts::
 	.byte 0

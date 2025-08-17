@@ -157,7 +157,8 @@
     "PacifidlogTown_House4",
     "PacifidlogTown_House5",
     "PacifidlogTown_Pokemart",
-    "PacifidlogTown_ProfessorLab"
+    "PacifidlogTown_ProfessorLab",
+    "PacifidlogTown_PlayerHouse"
   ],
   "gMapGroup_IndoorPetalburg": [
     "PetalburgCity_WallysHouse",

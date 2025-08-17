@@ -1,3 +1,16 @@
+script PacifidlogTown_House1_EventScript_Girl {
+	lock
+	faceplayer
+	msgbox(format("Grandpa told me that people once believed Mirage Island only sometimes appeared. How silly! It's always been just right out there!"))
+	release
+}
+
+script PacifidlogTown_House1_OldMan {
+	lock
+	faceplayer
+	msgbox(format("A long time ago, there were many more islands in the sea. But ever since Kyogre was awoken, most of the land has been submerged. You should always be grateful that Pacifidlog is built on a floating Corsola colony. Most of the other cities haven't been so lucky."))
+	release
+}
 raw `
 PacifidlogTown_House1_MapScripts::
 	.byte 0

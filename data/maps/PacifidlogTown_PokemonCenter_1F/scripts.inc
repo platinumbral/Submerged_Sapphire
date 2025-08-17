@@ -1,10 +1,10 @@
 PacifidlogTown_PokemonCenter_EventScript_GameboyKid::
 # 2 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
-	lockall
+	lock
 # 3 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
 	msgbox PacifidlogTown_PokemonCenter_EventScript_GameboyKid_Text_0
 # 4 "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.pory"
-	releaseall
+	release
 	return
 
 

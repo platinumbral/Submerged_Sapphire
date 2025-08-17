@@ -1,0 +1,14 @@
+mapscripts PacifidlogTown_PlayerHouse_MapScripts {}
+
+script PacifidlogTown_PlayerHouse_Mom {
+    lock
+    faceplayer
+    msgbox(format("Welcome home, {PLAYER}! I hope your journey is going well."))
+    if (checkmoney(1000) == FALSE){
+        msgbox(format("Are you sure you have enough money for your journey?"))
+        msgbox(format("I found this the other day, you can have it."))
+        giveitem(ITEM_PEARL)
+    }
+    msgbox(format("Be safe out there!"))
+    release
+}

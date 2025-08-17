@@ -1,5 +1,6 @@
 script PacifidlogTown_PokemonCenter_EventScript_GameboyKid {
 	lock
+	faceplayer
 	msgbox(format("Hey {PLAYER}, I hear you're setting out on a journey soon. I'm so jealous! I wish I had Pokemon of my own..."))
 	release
 }
