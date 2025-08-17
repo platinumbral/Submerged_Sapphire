@@ -4470,6 +4470,26 @@
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/SubSap_Route131/border.bin",
       "blockdata_filepath": "data/layouts/SubSap_Route131/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUB_SA_SKY_PILLAR_TOP",
+      "name": "SubSa_SkyPillar_Top_Layout",
+      "width": 27,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/SubSa_SkyPillar_Top/border.bin",
+      "blockdata_filepath": "data/layouts/SubSa_SkyPillar_Top/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUB_SAP_SKY_PILLAR_1F",
+      "name": "SubSap_SkyPillar_1F_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/SubSap_SkyPillar_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SubSap_SkyPillar_1F/map.bin"
     }
   ]
 }

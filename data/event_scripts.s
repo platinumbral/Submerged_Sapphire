@@ -1169,3 +1169,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PacifidlogTown_PlayerHouse/scripts.inc"
 
 	.include "data/maps/SubSap_Route131/scripts.inc"
+
+	.include "data/maps/SubSa_SkyPillar_Top/scripts.inc"
+
+	.include "data/maps/SubSap_SkyPillar_1F/scripts.inc"

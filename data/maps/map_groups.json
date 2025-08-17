@@ -628,6 +628,8 @@
   ],
   "gMapGroup_SubSap_TownsAndRoutes": [
     "SubSap_PacifidlogTown",
-    "SubSap_Route131"
+    "SubSap_Route131",
+    "SubSap_SkyPillar_1F",
+    "SubSa_SkyPillar_Top"
   ]
 }
