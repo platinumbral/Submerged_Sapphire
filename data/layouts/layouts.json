@@ -4490,6 +4490,26 @@
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/SubSap_SkyPillar_1F/border.bin",
       "blockdata_filepath": "data/layouts/SubSap_SkyPillar_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUB_SAP_ROUTE130",
+      "name": "Sub_Sap_Route130_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_ORAS_General",
+      "secondary_tileset": "gTileset_ORAS_Mossdeep",
+      "border_filepath": "data/layouts/Sub_Sap_Route130/border.bin",
+      "blockdata_filepath": "data/layouts/Sub_Sap_Route130/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUB_SAP_ROUTE130_LAYOUT",
+      "name": "SubSap_Route130_MirageIsland_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SubSap_Route130_MirageIsland_Layout/border.bin",
+      "blockdata_filepath": "data/layouts/SubSap_Route130_MirageIsland_Layout/map.bin"
     }
   ]
 }

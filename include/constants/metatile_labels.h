@@ -370,6 +370,10 @@
 // gTileset_MossdeepGym
 #define METATILE_MossdeepGym_YellowArrow_Right  0x250
 
+// gTileset_ORAS_General
+#define METATILE_ORAS_General_DefaultShallow      0x0A8
+#define METATILE_ORAS_General_Default_Ocean_Tile  0x0A0
+
 // gTileset_Pacifidlog
 #define METATILE_Pacifidlog_Door                               0x21A
 #define METATILE_Pacifidlog_FloatingLogs_HorizontalLeft        0x250
