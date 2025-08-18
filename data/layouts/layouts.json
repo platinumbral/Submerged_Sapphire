@@ -4496,7 +4496,7 @@
       "name": "Sub_Sap_Route130_Layout",
       "width": 80,
       "height": 40,
-      "primary_tileset": "gTileset_ORAS_General",
+      "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_ORAS_Mossdeep",
       "border_filepath": "data/layouts/Sub_Sap_Route130/border.bin",
       "blockdata_filepath": "data/layouts/Sub_Sap_Route130/map.bin"
