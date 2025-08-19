@@ -1,15 +1,15 @@
 mapscripts PacifidlogTown_ProfessorLab_MapScripts {
     MAP_SCRIPT_ON_TRANSITION : OnTransition
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_TEMP_2, 0: PacifidlogTown_ProffessorLab_EventScript_EveryFrame
-    ]
+        VAR_TEMP_2, 0: PacifidlogTown_ProfessorLab_EventScript_EveryFrame
+        ]
 }    
 
 script OnTransition {
     setvar(VAR_TEMP_2, 0)
 }
 
-script PacifidlogTown_ProffessorLab_EventScript_EveryFrame {
+script PacifidlogTown_ProfessorLab_EventScript_EveryFrame {
     if(var(VAR_PACIFIDLOG_TOWN_STATE) == 1) {
         lockall
         setvar(VAR_TEMP_2, 1)
@@ -29,6 +29,7 @@ script PacifidlogTown_ProffessorLab_EventScript_EveryFrame {
         applymovement(OBJ_EVENT_ID_PLAYER, PlayerIntro)
         waitmovement(0)
         msgbox(format("There are three Poké Balls here, each containing a different Pokémon. I want you to choose one!"))
+        setvar(VAR_PACIFIDLOG_TOWN_STATE, 2)
         waitmessage
         releaseall
     }
@@ -47,7 +48,7 @@ script PacifidlogTown_ProfessorLab_EventScript_LeftBall {
             setflag(FLAG_LEFT_STARTER)
             setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_STARTER_MON, 0)
-            setvar(VAR_PACIFIDLOG_TOWN_STATE, 2)
+            setvar(VAR_PACIFIDLOG_TOWN_STATE, 3)
             waitfanfare
             call(NicknamePartyMon)
         }
@@ -76,7 +77,7 @@ script PacifidlogTown_ProfessorLab_EventScript_MiddleBall {
             setflag(FLAG_MID_STARTER)
             setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_STARTER_MON, 1)
-            setvar(VAR_PACIFIDLOG_TOWN_STATE, 2)
+            setvar(VAR_PACIFIDLOG_TOWN_STATE, 3)
             waitfanfare
             call(NicknamePartyMon)
         }
@@ -105,7 +106,7 @@ script PacifidlogTown_ProfessorLab_EventScript_RightBall {
             setflag(FLAG_RIGHT_STARTER)
             setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_STARTER_MON, 2)
-            setvar(VAR_PACIFIDLOG_TOWN_STATE, 2)
+            setvar(VAR_PACIFIDLOG_TOWN_STATE, 3)
             waitfanfare
             call(NicknamePartyMon)
         }
@@ -151,7 +152,119 @@ script NicknamePartyMon {
     }
 }
 
+script Pacifidlogtown_ProfessorLab_EventScript_DontLeave {
+    lockall
+    msgbox(format("You can't leave yet, {PLAYER}! You need to choose a starter Pokémon first!"))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Playerup)
+    waitmovement(0)
+    releaseall
+}
 
+script PacifidlogTown_ProfessorLab_EventScript_TriggerRival_4 {
+    call(PacifidlogTown_ProfessorLab_EventScript_RivalIntro)
+    applymovement(OBJ_EVENT_ID_PLAYER, faceright)
+    msgbox(format("Oh, {PLAYER}, looks like you beat me here!"))
+    waitmessage
+    applymovement(7, rivalmove)
+    applymovement(OBJ_EVENT_ID_PLAYER, uptwo)
+    waitmovement(7)
+    call(PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection)
+    releaseall
+}
+
+script PacifidlogTown_ProfessorLab_EventScript_TriggerRival_5 {
+    call(PacifidlogTown_ProfessorLab_EventScript_RivalIntro)
+    applymovement(OBJ_EVENT_ID_PLAYER, facedown)
+    msgbox(format("Oh, {PLAYER}, looks like you beat me here!"))
+    waitmessage
+    applymovement(7, rivalmove)
+    applymovement(OBJ_EVENT_ID_PLAYER, leftup)
+    waitmovement(7)
+    call(PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection)
+    releaseall
+}
+
+script PacifidlogTown_ProfessorLab_EventScript_TriggerRival_6 {
+    call(PacifidlogTown_ProfessorLab_EventScript_RivalIntro)
+    applymovement(OBJ_EVENT_ID_PLAYER, facedown)
+    msgbox(format("Oh, {PLAYER}, looks like you beat me here!"))
+    waitmessage
+    applymovement(7, rivalmove)
+    applymovement(OBJ_EVENT_ID_PLAYER, waitleft)
+    waitmovement(7)
+    call(PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection)
+    releaseall
+}
+
+script PacifidlogTown_ProfessorLab_EventScript_TriggerRival_7 {
+    call(PacifidlogTown_ProfessorLab_EventScript_RivalIntro)
+    applymovement(OBJ_EVENT_ID_PLAYER, faceleft)
+    msgbox(format("Oh, {PLAYER}, looks like you beat me here!"))
+    waitmessage
+    applymovement(7, rivalmove)
+    applymovement(OBJ_EVENT_ID_PLAYER, left3up)
+    waitmovement(7)
+    call(PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection)
+    releaseall
+}
+script PacifidlogTown_ProfessorLab_EventScript_RivalIntro {
+    lockall
+    addobject(7)    
+    msgbox(format("Ah, sorry I'm late Professor!"))
+    waitmessage
+    applymovement(7, facetheplayer)
+    
+}
+
+script PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection {
+    lockall
+    msgbox(format("Oh, RIVAL, you can choose a starter Pokémon too!"))
+    waitmessage
+    msgbox(format("Hmm... I think I'll take..."))
+    if(var(VAR_STARTER_MON) == 0) {
+        applymovement(7, tomiddlemon)
+        waitmovement(0)
+        msgbox(format("Oshawott!"))
+        removeobject(5)
+        setflag(FLAG_MID_STARTER)
+        waitmessage
+        applymovement(7, right1)
+        waitmovement(0)
+        applymovement(7, facetheplayer)
+        waitmovement(0)
+        msgbox(format("Well {PLAYER}, we've both got a Pokémon now! You know what that means, right?"))
+    }
+    elif(var(VAR_STARTER_MON) == 1) {
+        applymovement(7, torightmon)
+        waitmovement(0)
+        msgbox(format("Popplio!"))
+        removeobject(6)
+        setflag(FLAG_RIGHT_STARTER)
+        waitmessage
+        applymovement(7, facetheplayer)
+        waitmovement(0)
+        msgbox(format("Well {PLAYER}, we've both got a Pokémon now! You know what that means, right?"))
+    }
+    else {
+        applymovement(7, toleftmon)
+        waitmovement(0)
+        msgbox(format("Piplup!"))
+        removeobject(4)
+        setflag(FLAG_LEFT_STARTER)
+        waitmessage
+        applymovement(7, right2)
+        waitmovement(0)
+        applymovement(7, facetheplayer)
+        waitmovement(0)
+        msgbox(format("Well {PLAYER}, we've both got a Pokémon now! You know what that means, right?"))
+    }
+    waitmessage
+    msgbox(format("This is where I'd put my rival battle, if I had one."))
+    setvar(VAR_PACIFIDLOG_TOWN_STATE, 4)
+
+    
+}
 movement ProfessorIntro1 {
     walk_down 
     walk_right * 2
@@ -176,4 +289,71 @@ movement PlayerIntro {
     walk_up * 2
     walk_left * 2
     walk_up
+}
+
+movement Playerup {
+    walk_up
+}
+
+movement facetheplayer {
+    face_player
+}
+
+movement faceright {
+    face_right
+}
+
+movement facedown {
+    face_down
+}
+
+movement faceleft {
+    face_left
+}
+
+movement rivalmove {
+    walk_up * 3
+    walk_left * 2 
+    face_up
+}
+
+movement uptwo {
+    walk_up * 2
+}
+
+movement leftup {
+    walk_left
+    walk_up
+}
+
+movement waitleft {
+    delay_1
+    walk_left * 2
+    walk_up
+}
+movement left3up {
+    walk_left * 3
+    walk_up *2
+}
+
+movement toleftmon {
+    walk_left
+    walk_up
+}
+
+movement tomiddlemon {
+    walk_up
+}
+
+movement torightmon {
+    walk_right
+    walk_up
+}
+
+movement right2 {
+    walk_right * 2
+}
+
+movement right1 {
+    walk_right
 }

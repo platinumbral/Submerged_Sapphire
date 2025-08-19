@@ -46,7 +46,7 @@
 #define FLAG_LEFT_STARTER    0x20 // Unused Flag
 #define FLAG_MID_STARTER     0x21 // Unused Flag
 #define FLAG_RIGHT_STARTER   0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
+#define FLAG_UNUSED_0x23     0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
