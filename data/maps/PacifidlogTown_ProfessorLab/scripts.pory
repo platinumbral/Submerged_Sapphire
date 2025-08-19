@@ -2,20 +2,25 @@ mapscripts PacifidlogTown_ProfessorLab_MapScripts {}
 
 script PacifidlogTown_ProfessorLab_EventScript_LeftBall {
     lockall
-    showmonpic(SPECIES_PIPLUP, 10, 3)
-    msgbox("Do you want to choose Piplup?", MSGBOX_YESNO)
-    if(var(VAR_RESULT) == YES) {
-        playfanfare(MUS_OBTAIN_BADGE)
-        msgbox("You received Piplup!")
-        givemon(SPECIES_PIPLUP, 5)
-        removeobject(4)
-        setflag(FLAG_LEFT_STARTER)
-        setvar(VAR_STARTER_MON, 0)
-        waitfanfare
-        call(NicknamePartyMon)
+    if(!(flag(FLAG_LEFT_STARTER) || flag(FLAG_MID_STARTER) || flag(FLAG_RIGHT_STARTER))) {
+        showmonpic(SPECIES_PIPLUP, 10, 3)
+        msgbox("Do you want to choose Piplup?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES) {
+            playfanfare(MUS_OBTAIN_BADGE)
+            msgbox("You received Piplup!")
+            givemon(SPECIES_PIPLUP, 5)
+            removeobject(4)
+            setflag(FLAG_LEFT_STARTER)
+            setvar(VAR_STARTER_MON, 0)
+            waitfanfare
+            call(NicknamePartyMon)
+        }
+        else{
+            hidemonpic
+        }
     }
     else{
-        hidemonpic
+        msgbox("You already have a starter Pokémon.")
     }
     waitmessage
     releaseall
@@ -24,20 +29,25 @@ script PacifidlogTown_ProfessorLab_EventScript_LeftBall {
 
 script PacifidlogTown_ProfessorLab_EventScript_MiddleBall {
     lockall
-    showmonpic(SPECIES_OSHAWOTT, 10, 3)
-    msgbox("Do you want to choose Oshawott?", MSGBOX_YESNO)
-    if(var(VAR_RESULT) == YES) {
-        playfanfare(MUS_OBTAIN_BADGE)
-        msgbox("You received Oshawott!")
-        givemon(SPECIES_OSHAWOTT, 5)
-        removeobject(5)
-        setflag(FLAG_MID_STARTER)
-        setvar(VAR_STARTER_MON, 1)
-        waitfanfare
-        call(NicknamePartyMon)
+    if(!(flag(FLAG_LEFT_STARTER) || flag(FLAG_MID_STARTER) || flag(FLAG_RIGHT_STARTER))) {
+        showmonpic(SPECIES_OSHAWOTT, 10, 3)
+        msgbox("Do you want to choose Oshawott?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES) {
+            playfanfare(MUS_OBTAIN_BADGE)
+            msgbox("You received Oshawott!")
+            givemon(SPECIES_OSHAWOTT, 5)
+            removeobject(5)
+            setflag(FLAG_MID_STARTER)
+            setvar(VAR_STARTER_MON, 1)
+            waitfanfare
+            call(NicknamePartyMon)
+        }
+        else{
+            hidemonpic
+        }
     }
     else{
-        hidemonpic
+        msgbox("You already have a starter Pokémon.")
     }
     waitmessage
     releaseall
@@ -46,20 +56,25 @@ script PacifidlogTown_ProfessorLab_EventScript_MiddleBall {
 
 script PacifidlogTown_ProfessorLab_EventScript_RightBall {
     lockall
-    showmonpic(SPECIES_POPPLIO, 10, 3)
-    msgbox("Do you want to choose Popplio?", MSGBOX_YESNO)
-    if(var(VAR_RESULT) == YES) {
-        playfanfare(MUS_OBTAIN_BADGE)
-        msgbox("You received Popplio!")
-        givemon(SPECIES_POPPLIO, 5)
-        removeobject(6)
-        setflag(FLAG_RIGHT_STARTER)
-        setvar(VAR_STARTER_MON, 2)
-        waitfanfare
-        call(NicknamePartyMon)
+    if(!(flag(FLAG_LEFT_STARTER) || flag(FLAG_MID_STARTER) || flag(FLAG_RIGHT_STARTER))) {
+        showmonpic(SPECIES_POPPLIO, 10, 3)
+        msgbox("Do you want to choose Popplio?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES) {
+            playfanfare(MUS_OBTAIN_BADGE)
+            msgbox("You received Popplio!")
+            givemon(SPECIES_POPPLIO, 5)
+            removeobject(6)
+            setflag(FLAG_RIGHT_STARTER)
+            setvar(VAR_STARTER_MON, 2)
+            waitfanfare
+            call(NicknamePartyMon)
+        }
+        else{
+            hidemonpic
+        }
     }
     else{
-        hidemonpic
+        msgbox("You already have a starter Pokémon.")
     }
     waitmessage
     releaseall
