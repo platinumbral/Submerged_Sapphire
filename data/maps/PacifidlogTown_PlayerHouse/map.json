@@ -44,6 +44,70 @@
       "dest_warp_id": "PLAYER_HOME"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_PACIFIDLOG_TOWN_STATE",
+      "var_value": "0",
+      "script": "PacifidlogTown_PlayerHouse_EventScript_Wakeup_0"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_PACIFIDLOG_TOWN_STATE",
+      "var_value": "0",
+      "script": "PacifidlogTown_PlayerHouse_EventScript_Wakeup_1"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_PACIFIDLOG_TOWN_STATE",
+      "var_value": "0",
+      "script": "PacifidlogTown_PlayerHouse_EventScript_Wakeup_2"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_PACIFIDLOG_TOWN_STATE",
+      "var_value": "0",
+      "script": "PacifidlogTown_PlayerHouse_EventScript_Wakeup_3"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_PACIFIDLOG_TOWN_STATE",
+      "var_value": "0",
+      "script": "PacifidlogTown_PlayerHouse_EventScript_Wakeup_4"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_PACIFIDLOG_TOWN_STATE",
+      "var_value": "0",
+      "script": "PacifidlogTown_PlayerHouse_EventScript_Wakeup_5"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_PACIFIDLOG_TOWN_STATE",
+      "var_value": "0",
+      "script": "PacifidlogTown_PlayerHouse_EventScript_Wakeup_6"
+    }
+  ],
   "bg_events": []
 }

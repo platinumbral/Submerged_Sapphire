@@ -1,4 +1,38 @@
-mapscripts PacifidlogTown_ProfessorLab_MapScripts {}
+mapscripts PacifidlogTown_ProfessorLab_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION : OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_2, 0: PacifidlogTown_ProffessorLab_EventScript_EveryFrame
+    ]
+}    
+
+script OnTransition {
+    setvar(VAR_TEMP_2, 0)
+}
+
+script PacifidlogTown_ProffessorLab_EventScript_EveryFrame {
+    if(var(VAR_PACIFIDLOG_TOWN_STATE) == 1) {
+        lockall
+        setvar(VAR_TEMP_2, 1)
+        msgbox(format("Alkalinity and turbidity readings are normal..."))
+        waitmessage
+        applymovement(3, ProfessorIntro1)
+        waitmovement(0)
+        msgbox(format("Looks like there's some minor bleaching in the colony..."))
+        waitmessage
+        applymovement(3, ProfessorIntro2)
+        waitmovement(0)
+        msgbox(format("Oh, {PLAYER}! There you are!"))
+        waitmessage
+        msgbox(format("Come here, I want to give you something!"))
+        waitmessage
+        applymovement(3, ProfessorIntro3)
+        applymovement(OBJ_EVENT_ID_PLAYER, PlayerIntro)
+        waitmovement(0)
+        msgbox(format("There are three Poké Balls here, each containing a different Pokémon. I want you to choose one!"))
+        waitmessage
+        releaseall
+    }
+}
 
 script PacifidlogTown_ProfessorLab_EventScript_LeftBall {
     lockall
@@ -11,7 +45,9 @@ script PacifidlogTown_ProfessorLab_EventScript_LeftBall {
             givemon(SPECIES_PIPLUP, 5)
             removeobject(4)
             setflag(FLAG_LEFT_STARTER)
+            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_STARTER_MON, 0)
+            setvar(VAR_PACIFIDLOG_TOWN_STATE, 2)
             waitfanfare
             call(NicknamePartyMon)
         }
@@ -38,7 +74,9 @@ script PacifidlogTown_ProfessorLab_EventScript_MiddleBall {
             givemon(SPECIES_OSHAWOTT, 5)
             removeobject(5)
             setflag(FLAG_MID_STARTER)
+            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_STARTER_MON, 1)
+            setvar(VAR_PACIFIDLOG_TOWN_STATE, 2)
             waitfanfare
             call(NicknamePartyMon)
         }
@@ -65,7 +103,9 @@ script PacifidlogTown_ProfessorLab_EventScript_RightBall {
             givemon(SPECIES_POPPLIO, 5)
             removeobject(6)
             setflag(FLAG_RIGHT_STARTER)
+            setflag(FLAG_SYS_POKEMON_GET)
             setvar(VAR_STARTER_MON, 2)
+            setvar(VAR_PACIFIDLOG_TOWN_STATE, 2)
             waitfanfare
             call(NicknamePartyMon)
         }
@@ -109,4 +149,31 @@ script NicknamePartyMon {
         call(Common_EventScript_GetGiftMonPartySlot)
         call(Common_EventScript_NameReceivedPartyMon)
     }
+}
+
+
+movement ProfessorIntro1 {
+    walk_down 
+    walk_right * 2
+    face_up
+}
+
+movement ProfessorIntro2 {
+    walk_left * 2
+    emote_exclamation_mark
+}
+    
+movement ProfessorIntro3 {
+    walk_up
+    walk_left
+    walk_up
+    walk_left
+    walk_up
+    face_down
+}    
+    
+movement PlayerIntro {
+    walk_up * 2
+    walk_left * 2
+    walk_up
 }

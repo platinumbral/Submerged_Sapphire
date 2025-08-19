@@ -1,5 +1,6 @@
 mapscripts PacifidlogTown_PlayerHouse_MapScripts {}
 
+
 script PacifidlogTown_PlayerHouse_Mom {
     lock
     faceplayer
@@ -11,4 +12,97 @@ script PacifidlogTown_PlayerHouse_Mom {
     }
     msgbox(format("Be safe out there!"))
     release
+}
+
+
+
+
+script PacifidlogTown_PlayerHouse_EventScript_Wakeup_0 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER,ToMom_0)
+    call(PacifidlogTown_PlayerHouse_EventScript_FirstMom)
+}
+
+movement ToMom_0 {
+    walk_down * 3
+    walk_left * 4
+}
+
+script PacifidlogTown_PlayerHouse_EventScript_Wakeup_1 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER,ToMom_1)
+    call(PacifidlogTown_PlayerHouse_EventScript_FirstMom)
+}
+
+movement ToMom_1 {
+    walk_down * 2
+    walk_left * 4
+}
+
+script PacifidlogTown_PlayerHouse_EventScript_Wakeup_2 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER,ToMom_2)
+    call(PacifidlogTown_PlayerHouse_EventScript_FirstMom)
+}
+
+movement ToMom_2 {
+    walk_down
+    walk_left * 4
+}
+script PacifidlogTown_PlayerHouse_EventScript_Wakeup_3 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER,ToMom_3)
+    call(PacifidlogTown_PlayerHouse_EventScript_FirstMom)
+}
+
+movement ToMom_3 {
+    walk_left * 4
+}
+
+script PacifidlogTown_PlayerHouse_EventScript_Wakeup_4 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER,ToMom_4)
+    call(PacifidlogTown_PlayerHouse_EventScript_FirstMom)
+}
+
+movement ToMom_4 {
+    walk_up 
+    walk_left * 4
+}
+
+script PacifidlogTown_PlayerHouse_EventScript_Wakeup_5 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER,ToMom_5)
+    call(PacifidlogTown_PlayerHouse_EventScript_FirstMom)
+}
+
+movement ToMom_5 {
+    walk_up * 2
+    walk_left * 4
+}
+
+script PacifidlogTown_PlayerHouse_EventScript_Wakeup_6 {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER,ToMom_6)
+    call(PacifidlogTown_PlayerHouse_EventScript_FirstMom)
+
+}
+
+movement ToMom_6 {
+    walk_up * 3
+    walk_left * 4
+}
+
+movement MomTurn {
+    face_right
+}
+
+script PacifidlogTown_PlayerHouse_EventScript_FirstMom {
+    waitmovement(0)
+    applymovement(1,MomTurn)
+    waitmovement(0)
+    msgbox(format("Oh, {PLAYER}! You woke up!"))
+    msgbox(format("Professor Fir told me he wanted to see you, supposedly he's got a surprise planned for you and RIVAL"))
+    setvar(VAR_PACIFIDLOG_TOWN_STATE, 1)
+    releaseall
 }
