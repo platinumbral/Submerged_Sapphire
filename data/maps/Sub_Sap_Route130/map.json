@@ -17,6 +17,11 @@
       "map": "MAP_SUB_SAP_ROUTE131",
       "offset": 0,
       "direction": "left"
+    },
+    {
+      "map": "MAP_SUB_SAP_ROUTE128_129",
+      "offset": -20,
+      "direction": "right"
     }
   ],
   "object_events": [

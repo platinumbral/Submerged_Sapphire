@@ -50,7 +50,7 @@
     },
     {
       "id": "MAPSEC_PACIFIDLOG_TOWN",
-      "name": "PACIFIDLOG TOWN",
+      "name": "Pacifidlog Town",
       "x": 17,
       "y": 10,
       "width": 1,
@@ -1230,6 +1230,10 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_POKEMON_LAB",
+      "name": "Pacifidlog Lab"
     }
   ]
 }

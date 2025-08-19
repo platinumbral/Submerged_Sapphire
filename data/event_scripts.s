@@ -1175,3 +1175,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SubSap_SkyPillar_1F/scripts.inc"
 
 	.include "data/maps/Sub_Sap_Route130/scripts.inc"
+
+	.include "data/maps/SubSap_Route128_129/scripts.inc"

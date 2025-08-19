@@ -3,14 +3,14 @@
   "name": "PacifidlogTown_ProfessorLab",
   "layout": "LAYOUT_PACIFIDLOG_TOWN_PROFESSOR_LAB",
   "music": "MUS_BIRCH_LAB",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_POKEMON_LAB",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
   "allow_escaping": false,
-  "allow_running": false,
-  "show_map_name": false,
+  "allow_running": true,
+  "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [
@@ -52,6 +52,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PacifidlogTown_ProfessorLab_EventScript_Professor",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PacifidlogTown_ProfessorLab_EventScript_LeftBall",
+      "flag": "FLAG_LEFT_STARTER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PacifidlogTown_ProfessorLab_EventScript_MiddleBall",
+      "flag": "FLAG_MID_STARTER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PacifidlogTown_ProfessorLab_EventScript_RightBall",
+      "flag": "FLAG_RIGHT_STARTER"
     }
   ],
   "warp_events": [

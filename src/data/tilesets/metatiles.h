@@ -211,41 +211,6 @@ const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/
 const u16 gMetatiles_SubSap_Pacifidlog[] = INCBIN_U16("data/tilesets/secondary/sub_sap_pacifidlog/metatiles.bin");
 const u16 gMetatileAttributes_SubSap_Pacifidlog[] = INCBIN_U16("data/tilesets/secondary/sub_sap_pacifidlog/metatile_attributes.bin");
 
-const u16 gMetatiles_ORAS_General[] = INCBIN_U16("data/tilesets/primary/oras_general/metatiles.bin");
-const u16 gMetatileAttributes_ORAS_General[] = INCBIN_U16("data/tilesets/primary/oras_general/metatile_attributes.bin");
+const u16 gMetatiles_BeachCave[] = INCBIN_U16("data/tilesets/secondary/beach_cave/metatiles.bin");
+const u16 gMetatileAttributes_BeachCave[] = INCBIN_U16("data/tilesets/secondary/beach_cave/metatile_attributes.bin");
 
-const u16 gMetatiles_ORAS_Dewford[] = INCBIN_U16("data/tilesets/secondary/oras_dewford/metatiles.bin");
-const u16 gMetatileAttributes_ORAS_Dewford[] = INCBIN_U16("data/tilesets/secondary/oras_dewford/metatile_attributes.bin");
-
-const u16 gMetatiles_ORAS_Ever_Grande[] = INCBIN_U16("data/tilesets/secondary/oras_ever_grande/metatiles.bin");
-const u16 gMetatileAttributes_ORAS_Ever_Grande[] = INCBIN_U16("data/tilesets/secondary/oras_ever_grande/metatile_attributes.bin");
-
-const u16 gMetatiles_ORAS_Fallarbor[] = INCBIN_U16("data/tilesets/secondary/oras_fallarbor/metatiles.bin");
-const u16 gMetatileAttributes_ORAS_Fallarbor[] = INCBIN_U16("data/tilesets/secondary/oras_fallarbor/metatile_attributes.bin");
-
-const u16 gMetatiles_ORAS_Fortree[] = INCBIN_U16("data/tilesets/secondary/oras_fortree/metatiles.bin");
-const u16 gMetatileAttributes_ORAS_Fortree[] = INCBIN_U16("data/tilesets/secondary/oras_fortree/metatile_attributes.bin");
-
-const u16 gMetatiles_ORAS_Lavaridge[] = INCBIN_U16("data/tilesets/secondary/oras_lavaridge/metatiles.bin");
-const u16 gMetatileAttributes_ORAS_Lavaridge[] = INCBIN_U16("data/tilesets/secondary/oras_lavaridge/metatile_attributes.bin");
-
-const u16 gMetatiles_ORAS_Lilycove[] = INCBIN_U16("data/tilesets/secondary/oras_lilycove/metatiles.bin");
-const u16 gMetatileAttributes_ORAS_Lilycove[] = INCBIN_U16("data/tilesets/secondary/oras_lilycove/metatile_attributes.bin");
-
-const u16 gMetatiles_ORAS_Mauville[] = INCBIN_U16("data/tilesets/secondary/oras_mauville/metatiles.bin");
-const u16 gMetatileAttributes_ORAS_Mauville[] = INCBIN_U16("data/tilesets/secondary/oras_mauville/metatile_attributes.bin");
-
-const u16 gMetatiles_ORAS_Mossdeep[] = INCBIN_U16("data/tilesets/secondary/oras_mossdeep/metatiles.bin");
-const u16 gMetatileAttributes_ORAS_Mossdeep[] = INCBIN_U16("data/tilesets/secondary/oras_mossdeep/metatile_attributes.bin");
-
-const u16 gMetatiles_ORAS_Petalburg[] = INCBIN_U16("data/tilesets/secondary/oras_petalburg/metatiles.bin");
-const u16 gMetatileAttributes_ORAS_Petalburg[] = INCBIN_U16("data/tilesets/secondary/oras_petalburg/metatile_attributes.bin");
-
-const u16 gMetatiles_ORAS_Rustboro[] = INCBIN_U16("data/tilesets/secondary/oras_rustboro/metatiles.bin");
-const u16 gMetatileAttributes_ORAS_Rustboro[] = INCBIN_U16("data/tilesets/secondary/oras_rustboro/metatile_attributes.bin");
-
-const u16 gMetatiles_ORAS_Slateport[] = INCBIN_U16("data/tilesets/secondary/oras_slateport/metatiles.bin");
-const u16 gMetatileAttributes_ORAS_Slateport[] = INCBIN_U16("data/tilesets/secondary/oras_slateport/metatile_attributes.bin");
-
-const u16 gMetatiles_ORAS_Sootopolis[] = INCBIN_U16("data/tilesets/secondary/oras_sootopolis/metatiles.bin");
-const u16 gMetatileAttributes_ORAS_Sootopolis[] = INCBIN_U16("data/tilesets/secondary/oras_sootopolis/metatile_attributes.bin");

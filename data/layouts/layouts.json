@@ -4497,7 +4497,7 @@
       "width": 80,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_ORAS_Mossdeep",
+      "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/Sub_Sap_Route130/border.bin",
       "blockdata_filepath": "data/layouts/Sub_Sap_Route130/map.bin"
     },
@@ -4510,6 +4510,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/SubSap_Route130_MirageIsland_Layout/border.bin",
       "blockdata_filepath": "data/layouts/SubSap_Route130_MirageIsland_Layout/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUB_SAP_ROUTE128_129",
+      "name": "SubSap_Route128_129_Layout",
+      "width": 120,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/SubSap_Route128_129/border.bin",
+      "blockdata_filepath": "data/layouts/SubSap_Route128_129/map.bin"
     }
   ]
 }
