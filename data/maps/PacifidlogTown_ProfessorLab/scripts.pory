@@ -1,11 +1,11 @@
 mapscripts PacifidlogTown_ProfessorLab_MapScripts {
-    MAP_SCRIPT_ON_TRANSITION : OnTransition
+    MAP_SCRIPT_ON_TRANSITION : PacifidlogTown_ProfessorLab_OnTransition
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_TEMP_2, 0: PacifidlogTown_ProfessorLab_EventScript_EveryFrame
         ]
 }    
 
-script OnTransition {
+script PacifidlogTown_ProfessorLab_OnTransition {
     setvar(VAR_TEMP_2, 0)
 }
 
@@ -262,6 +262,7 @@ script PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection {
     waitmessage
     msgbox(format("This is where I'd put my rival battle, if I had one."))
     setvar(VAR_PACIFIDLOG_TOWN_STATE, 4)
+    releaseall
 
     
 }

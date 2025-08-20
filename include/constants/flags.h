@@ -43,10 +43,10 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_LEFT_STARTER    0x20 // Unused Flag
-#define FLAG_MID_STARTER     0x21 // Unused Flag
-#define FLAG_RIGHT_STARTER   0x22 // Unused Flag
-#define FLAG_UNUSED_0x23     0x23 // Unused Flag
+#define FLAG_LEFT_STARTER    0x20 // Appearance of left starter ball in Professor's Lab
+#define FLAG_MID_STARTER     0x21 // Appearance of middle starter ball in Professor's Lab
+#define FLAG_RIGHT_STARTER   0x22 // Appearance of right starter ball in Professor's Lab
+#define FLAG_ON              0x23 // Determines if Dev Squirtle has been met
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag

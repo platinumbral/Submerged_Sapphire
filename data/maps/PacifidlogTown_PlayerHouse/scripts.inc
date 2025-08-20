@@ -228,6 +228,8 @@ PacifidlogTown_PlayerHouse_EventScript_FirstMom::
 # 106 "data/maps/PacifidlogTown_PlayerHouse/scripts.pory"
 	setvar VAR_PACIFIDLOG_TOWN_STATE, 1
 # 107 "data/maps/PacifidlogTown_PlayerHouse/scripts.pory"
+	setflag FLAG_ON
+# 108 "data/maps/PacifidlogTown_PlayerHouse/scripts.pory"
 	releaseall
 	return
 

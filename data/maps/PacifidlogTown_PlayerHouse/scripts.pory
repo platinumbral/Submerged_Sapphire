@@ -104,5 +104,6 @@ script PacifidlogTown_PlayerHouse_EventScript_FirstMom {
     msgbox(format("Oh, {PLAYER}! You woke up!"))
     msgbox(format("Professor Fir told me he wanted to see you, supposedly he's got a surprise planned for you and RIVAL"))
     setvar(VAR_PACIFIDLOG_TOWN_STATE, 1)
+    setflag(FLAG_ON)
     releaseall
 }

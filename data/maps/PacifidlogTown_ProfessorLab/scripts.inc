@@ -1,6 +1,6 @@
 PacifidlogTown_ProfessorLab_MapScripts::
 # 2 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	map_script MAP_SCRIPT_ON_TRANSITION, OnTransition
+	map_script MAP_SCRIPT_ON_TRANSITION, PacifidlogTown_ProfessorLab_OnTransition
 # 3 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, PacifidlogTown_ProfessorLab_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
@@ -11,7 +11,7 @@ PacifidlogTown_ProfessorLab_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 	.2byte 0
 
 
-OnTransition::
+PacifidlogTown_ProfessorLab_OnTransition::
 # 9 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	setvar VAR_TEMP_2, 0
 	return
@@ -468,6 +468,8 @@ PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_1:
 	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_6
 # 264 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	setvar VAR_PACIFIDLOG_TOWN_STATE, 4
+# 265 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	releaseall
 	return
 
 PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_2:
@@ -517,179 +519,179 @@ PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_3:
 	goto PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_1
 
 
-# 268 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-ProfessorIntro1:
 # 269 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+ProfessorIntro1:
+# 270 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_down
-# 270 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_right
-# 270 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 271 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_right
 # 271 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_right
+# 272 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_up
 	step_end
 
-# 274 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 275 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 ProfessorIntro2:
-# 275 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_left
-# 275 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 276 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
 # 276 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_left
+# 277 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 279 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-ProfessorIntro3:
 # 280 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_up
+ProfessorIntro3:
 # 281 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_left
+	walk_up
 # 282 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_up
-# 283 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
-# 284 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 283 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
+# 284 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_left
 # 285 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_up
+# 286 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_down
 	step_end
 
-# 288 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 289 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 PlayerIntro:
-# 289 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_up
-# 289 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 290 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 # 290 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_left
-# 290 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_up
+# 291 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
 # 291 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_left
+# 292 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 294 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-Playerup:
 # 295 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+Playerup:
+# 296 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 298 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-facetheplayer:
 # 299 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+facetheplayer:
+# 300 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_player
 	step_end
 
-# 302 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-faceright:
 # 303 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+faceright:
+# 304 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_right
 	step_end
 
-# 306 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-facedown:
 # 307 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+facedown:
+# 308 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_down
 	step_end
 
-# 310 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-faceleft:
 # 311 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+faceleft:
+# 312 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_left
 	step_end
 
-# 314 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 315 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 rivalmove:
-# 315 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_up
-# 315 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_up
-# 315 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 316 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 # 316 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_left
+	walk_up
 # 316 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_up
+# 317 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
 # 317 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_left
+# 318 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_up
 	step_end
 
-# 320 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 321 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 uptwo:
-# 321 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 322 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
-# 321 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 322 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 324 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-leftup:
 # 325 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_left
+leftup:
 # 326 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_left
+# 327 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 329 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-waitleft:
 # 330 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+waitleft:
+# 331 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	delay_1
-# 331 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_left
-# 331 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 332 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
 # 332 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_left
+# 333 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 334 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 335 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 left3up:
-# 335 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_left
-# 335 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_left
-# 335 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 336 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
 # 336 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_left
+# 336 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_left
+# 337 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
-# 336 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 337 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 339 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-toleftmon:
 # 340 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_left
+toleftmon:
 # 341 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_left
+# 342 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 344 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-tomiddlemon:
 # 345 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+tomiddlemon:
+# 346 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 348 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-torightmon:
 # 349 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_right
+torightmon:
 # 350 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_right
+# 351 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 353 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 354 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 right2:
-# 354 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 355 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_right
-# 354 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 355 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_right
 	step_end
 
-# 357 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-right1:
 # 358 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+right1:
+# 359 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_right
 	step_end
 

@@ -103,7 +103,7 @@
 #define VAR_LAVARIDGE_TOWN_STATE                         0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
 #define VAR_VERDANTURF_TOWN_STATE                        0x4055 // Unused Var
-#define VAR_PACIFIDLOG_TOWN_STATE                        0x4056 // 0: New game, Woke up;
+#define VAR_PACIFIDLOG_TOWN_STATE                        0x4056 // 0: New game, 1: Woke up and talked to Mom; 2: Introducded to Prof; 3: Received starter; 4: Battled Rival;
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058
 #define VAR_MAUVILLE_CITY_STATE                          0x4059 // Unused Var
