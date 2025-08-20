@@ -5,9 +5,9 @@
 
 #define TRAINER_NONE                          0
 #define TRAINER_ROUTE131_SWIMMER_OPHELIA      1
-#define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
-#define TRAINER_GRUNT_AQUA_HIDEOUT_2          3
-#define TRAINER_GRUNT_AQUA_HIDEOUT_3          4
+#define TRAINER_LAB_RIVAL_PIPLUP              2
+#define TRAINER_LAB_RIVAL_OSHAWOTT            3
+#define TRAINER_LAB_RIVAL_POPPLIO             4
 #define TRAINER_GRUNT_AQUA_HIDEOUT_4          5
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_1       6
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_2       7

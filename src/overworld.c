@@ -379,6 +379,11 @@ void DoWhiteOut(void)
 {
     RunScriptImmediately(EventScript_WhiteOut);
     HealPlayerParty();
+    if (FlagGet(FLAG_TEMP_CONTINUE_ON_LOSS))
+    {
+        FlagSet(FLAG_TEMP_PLAYER_LOST);
+        return;
+    }
     Overworld_ResetStateAfterWhiteOut();
     SetWarpDestinationToLastHealLocation();
     WarpIntoMap();

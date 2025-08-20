@@ -234,6 +234,8 @@ script PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection {
         applymovement(7, facetheplayer)
         waitmovement(0)
         msgbox(format("Well {PLAYER}, we've both got a Pokémon now! You know what that means, right?"))
+        setflag(FLAG_TEMP_CONTINUE_ON_LOSS)
+        trainerbattle_single(TRAINER_LAB_RIVAL_PIPLUP, LabRival_Intro, LabRival_Outro)
     }
     elif(var(VAR_STARTER_MON) == 1) {
         applymovement(7, torightmon)
@@ -245,6 +247,8 @@ script PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection {
         applymovement(7, facetheplayer)
         waitmovement(0)
         msgbox(format("Well {PLAYER}, we've both got a Pokémon now! You know what that means, right?"))
+        setflag(FLAG_TEMP_CONTINUE_ON_LOSS)
+        trainerbattle_single(TRAINER_LAB_RIVAL_OSHAWOTT, LabRival_Intro, LabRival_Outro)
     }
     else {
         applymovement(7, toleftmon)
@@ -258,11 +262,10 @@ script PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection {
         applymovement(7, facetheplayer)
         waitmovement(0)
         msgbox(format("Well {PLAYER}, we've both got a Pokémon now! You know what that means, right?"))
+        setflag(FLAG_TEMP_CONTINUE_ON_LOSS)
+        trainerbattle_single(TRAINER_LAB_RIVAL_POPPLIO, LabRival_Intro, LabRival_Outro)
     }
-    waitmessage
-    msgbox(format("This is where I'd put my rival battle, if I had one."))
-    setvar(VAR_PACIFIDLOG_TOWN_STATE, 4)
-    releaseall
+    
 
     
 }
@@ -328,7 +331,7 @@ movement leftup {
 }
 
 movement waitleft {
-    delay_1
+    delay_16
     walk_left * 2
     walk_up
 }
@@ -357,4 +360,28 @@ movement right2 {
 
 movement right1 {
     walk_right
+}
+
+script PacifidlogTown_ProfessorLab_Eventscript_PostBattleRival {
+    if (flag(FLAG_TEMP_PLAYER_LOST) == TRUE) {
+        msgbox(format("Yay, I won!"))
+        clearflag(FLAG_TEMP_PLAYER_LOST)
+    }
+    else {
+        msgbox(format("I'll get you next time!"))
+    }
+    setvar(VAR_PACIFIDLOG_TOWN_STATE, 4)
+    releaseall
+}
+
+text LabRival_Intro {
+    "Oh hi {PLAYER}! You have a Pokémon now, right? Let's battle!"
+}
+
+text LabRival_Outro {
+    "Wow, you're really good! I need to train harder!"
+}
+
+text LabRival_PostBattle {
+    "You'll have no trouble making it to Ever Grande City!"
 }

@@ -153,47 +153,47 @@ AquaHideout_B1F_EventScript_DefeatedElectrode2::
 # 77 "data/maps/AquaHideout_B1F/scripts.pory"
 
 # 78 "data/maps/AquaHideout_B1F/scripts.pory"
-AquaHideout_B1F_EventScript_Grunt2::
+// AquaHideout_B1F_EventScript_Grunt2::
 # 79 "data/maps/AquaHideout_B1F/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_2, AquaHideout_B1F_Text_Grunt2Intro, AquaHideout_B1F_Text_Grunt2Defeat, AquaHideout_B1F_EventScript_Grunt2Defeated
+//	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_2, AquaHideout_B1F_Text_Grunt2Intro, AquaHideout_B1F_Text_Grunt2Defeat, AquaHideout_B1F_EventScript_Grunt2Defeated
 # 80 "data/maps/AquaHideout_B1F/scripts.pory"
-	msgbox AquaHideout_B1F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
+//	msgbox AquaHideout_B1F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 # 81 "data/maps/AquaHideout_B1F/scripts.pory"
-	end
+//	end
 # 82 "data/maps/AquaHideout_B1F/scripts.pory"
 
 # 83 "data/maps/AquaHideout_B1F/scripts.pory"
-AquaHideout_B1F_EventScript_Grunt2Defeated::
+// AquaHideout_B1F_EventScript_Grunt2Defeated::
 # 84 "data/maps/AquaHideout_B1F/scripts.pory"
-	special PlayerFaceTrainerAfterBattle
+//	special PlayerFaceTrainerAfterBattle
 # 85 "data/maps/AquaHideout_B1F/scripts.pory"
-	waitmovement 0
+//	waitmovement 0
 # 86 "data/maps/AquaHideout_B1F/scripts.pory"
-	msgbox AquaHideout_B1F_Text_Grunt2PostBattle, MSGBOX_DEFAULT
+//	msgbox AquaHideout_B1F_Text_Grunt2PostBattle, MSGBOX_DEFAULT
 # 87 "data/maps/AquaHideout_B1F/scripts.pory"
-	release
+//	release
 # 88 "data/maps/AquaHideout_B1F/scripts.pory"
-	end
+//	end
 # 89 "data/maps/AquaHideout_B1F/scripts.pory"
 
 # 90 "data/maps/AquaHideout_B1F/scripts.pory"
-AquaHideout_B1F_EventScript_Grunt3::
+// AquaHideout_B1F_EventScript_Grunt3::
 # 91 "data/maps/AquaHideout_B1F/scripts.pory"
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_3, AquaHideout_B1F_Text_Grunt3Intro, AquaHideout_B1F_Text_Grunt3Defeat, AquaHideout_B1F_EventScript_Grunt3Defeated
+//	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_3, AquaHideout_B1F_Text_Grunt3Intro, AquaHideout_B1F_Text_Grunt3Defeat, AquaHideout_B1F_EventScript_Grunt3Defeated
 # 92 "data/maps/AquaHideout_B1F/scripts.pory"
-	msgbox AquaHideout_B1F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
+//	msgbox AquaHideout_B1F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 # 93 "data/maps/AquaHideout_B1F/scripts.pory"
-	end
+//	end
 # 94 "data/maps/AquaHideout_B1F/scripts.pory"
 
 # 95 "data/maps/AquaHideout_B1F/scripts.pory"
-AquaHideout_B1F_EventScript_Grunt3Defeated::
+// AquaHideout_B1F_EventScript_Grunt3Defeated::
 # 96 "data/maps/AquaHideout_B1F/scripts.pory"
-	msgbox AquaHideout_B1F_Text_Grunt3PostBattle, MSGBOX_DEFAULT
+//	msgbox AquaHideout_B1F_Text_Grunt3PostBattle, MSGBOX_DEFAULT
 # 97 "data/maps/AquaHideout_B1F/scripts.pory"
-	release
+//	release
 # 98 "data/maps/AquaHideout_B1F/scripts.pory"
-	end
+//	end
 # 99 "data/maps/AquaHideout_B1F/scripts.pory"
 
 # 100 "data/maps/AquaHideout_B1F/scripts.pory"
