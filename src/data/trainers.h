@@ -74,7 +74,7 @@ F_TRAINER_FEMALE |
 #line 103
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 104
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
 #line 105
 F_TRAINER_FEMALE | 
@@ -108,7 +108,7 @@ F_TRAINER_FEMALE |
 #line 116
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 117
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
 #line 118
 F_TRAINER_FEMALE | 
@@ -142,7 +142,7 @@ F_TRAINER_FEMALE |
 #line 130
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 131
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_MAY,
         .encounterMusic_gender =
 #line 132
 F_TRAINER_FEMALE | 

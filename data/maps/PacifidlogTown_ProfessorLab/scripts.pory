@@ -2,6 +2,7 @@ mapscripts PacifidlogTown_ProfessorLab_MapScripts {
     MAP_SCRIPT_ON_TRANSITION : PacifidlogTown_ProfessorLab_OnTransition
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_TEMP_2, 0: PacifidlogTown_ProfessorLab_EventScript_EveryFrame
+        VAR_LOST_BATTLE, 1: PacifidlogTown_ProfessorLab_EventScript_RivalBattleLoss
         ]
 }    
 
@@ -233,9 +234,8 @@ script PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection {
         waitmovement(0)
         applymovement(7, facetheplayer)
         waitmovement(0)
-        msgbox(format("Well {PLAYER}, we've both got a Pokémon now! You know what that means, right?"))
         setflag(FLAG_TEMP_CONTINUE_ON_LOSS)
-        trainerbattle_single(TRAINER_LAB_RIVAL_PIPLUP, LabRival_Intro, LabRival_Outro)
+        trainerbattle_single(TRAINER_LAB_RIVAL_PIPLUP, LabRival_Intro, LabRival_Outro,PacifidlogTown_ProfessorLab_Eventscript_RivalBattleWon)
     }
     elif(var(VAR_STARTER_MON) == 1) {
         applymovement(7, torightmon)
@@ -246,9 +246,8 @@ script PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection {
         waitmessage
         applymovement(7, facetheplayer)
         waitmovement(0)
-        msgbox(format("Well {PLAYER}, we've both got a Pokémon now! You know what that means, right?"))
         setflag(FLAG_TEMP_CONTINUE_ON_LOSS)
-        trainerbattle_single(TRAINER_LAB_RIVAL_OSHAWOTT, LabRival_Intro, LabRival_Outro)
+        trainerbattle_single(TRAINER_LAB_RIVAL_OSHAWOTT, LabRival_Intro, LabRival_Outro,PacifidlogTown_ProfessorLab_Eventscript_RivalBattleWon)
     }
     else {
         applymovement(7, toleftmon)
@@ -261,9 +260,8 @@ script PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection {
         waitmovement(0)
         applymovement(7, facetheplayer)
         waitmovement(0)
-        msgbox(format("Well {PLAYER}, we've both got a Pokémon now! You know what that means, right?"))
         setflag(FLAG_TEMP_CONTINUE_ON_LOSS)
-        trainerbattle_single(TRAINER_LAB_RIVAL_POPPLIO, LabRival_Intro, LabRival_Outro)
+        trainerbattle_single(TRAINER_LAB_RIVAL_POPPLIO, LabRival_Intro, LabRival_Outro,PacifidlogTown_ProfessorLab_Eventscript_RivalBattleWon)
     }
     
 
@@ -362,20 +360,23 @@ movement right1 {
     walk_right
 }
 
-script PacifidlogTown_ProfessorLab_Eventscript_PostBattleRival {
-    if (flag(FLAG_TEMP_PLAYER_LOST) == TRUE) {
-        msgbox(format("Yay, I won!"))
-        clearflag(FLAG_TEMP_PLAYER_LOST)
-    }
-    else {
-        msgbox(format("I'll get you next time!"))
-    }
+script PacifidlogTown_ProfessorLab_Eventscript_RivalBattleWon {
+    msgbox(format("I'll get you next time!"))
+    clearflag(FLAG_TEMP_CONTINUE_ON_LOSS)
     setvar(VAR_PACIFIDLOG_TOWN_STATE, 4)
     releaseall
 }
-
+script PacifidlogTown_ProfessorLab_EventScript_RivalBattleLoss {
+    msgbox(format("Yes, I choose the better Pokémon!"))
+    waitmessage
+    setvar(VAR_LOST_BATTLE, 0)
+    clearflag(FLAG_TEMP_CONTINUE_ON_LOSS)
+    setvar(VAR_PACIFIDLOG_TOWN_STATE, 4)
+    releaseall
+}
 text LabRival_Intro {
-    "Oh hi {PLAYER}! You have a Pokémon now, right? Let's battle!"
+    "Well {PLAYER}, we've both got a Pokémon now! You know what that means, right?"
+
 }
 
 text LabRival_Outro {

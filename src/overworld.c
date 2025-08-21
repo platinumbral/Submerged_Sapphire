@@ -381,7 +381,7 @@ void DoWhiteOut(void)
     HealPlayerParty();
     if (FlagGet(FLAG_TEMP_CONTINUE_ON_LOSS))
     {
-        FlagSet(FLAG_TEMP_PLAYER_LOST);
+        VarSet(VAR_LOST_BATTLE,1);
         return;
     }
     Overworld_ResetStateAfterWhiteOut();

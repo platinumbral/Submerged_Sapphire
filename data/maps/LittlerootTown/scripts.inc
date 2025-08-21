@@ -24,7 +24,7 @@ LittlerootTown_EventScript_DevSquirtle_2:
 # 9 "data/maps/LittlerootTown/scripts.pory"
 	waitfanfare
 # 10 "data/maps/LittlerootTown/scripts.pory"
-	givemon SPECIES_DRAGONITE, 45, ITEM_DRAGON_SCALE, , , , , , , , , , , , , , , , , MOVE_SURF, MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_FLY
+	givemon SPECIES_DRAGONITE, 45, ITEM_DRAGON_SCALE, , , , , , , , , , , , , , , , , MOVE_SURF, MOVE_DRAGON_CLAW, MOVE_MEMENTO, MOVE_FLY
 # 11 "data/maps/LittlerootTown/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 12 "data/maps/LittlerootTown/scripts.pory"

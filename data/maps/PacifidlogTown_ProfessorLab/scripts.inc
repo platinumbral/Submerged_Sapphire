@@ -8,492 +8,490 @@ PacifidlogTown_ProfessorLab_MapScripts::
 PacifidlogTown_ProfessorLab_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 4 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	map_script_2 VAR_TEMP_2, 0, PacifidlogTown_ProfessorLab_EventScript_EveryFrame
+# 5 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	map_script_2 VAR_LOST_BATTLE, 1, PacifidlogTown_ProfessorLab_EventScript_RivalBattleLoss
 	.2byte 0
 
 
 PacifidlogTown_ProfessorLab_OnTransition::
-# 9 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 10 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	setvar VAR_TEMP_2, 0
 	return
 
 
 PacifidlogTown_ProfessorLab_EventScript_EveryFrame::
-# 13 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 14 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	compare VAR_PACIFIDLOG_TOWN_STATE, 1
 	goto_if_eq PacifidlogTown_ProfessorLab_EventScript_EveryFrame_1
 	return
 
 PacifidlogTown_ProfessorLab_EventScript_EveryFrame_1:
-# 14 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	lockall
 # 15 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setvar VAR_TEMP_2, 1
+	lockall
 # 16 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_0
+	setvar VAR_TEMP_2, 1
 # 17 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
+	msgbox PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_0
 # 18 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement 3, ProfessorIntro1
+	waitmessage
 # 19 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmovement 0
+	applymovement 3, ProfessorIntro1
 # 20 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_1
+	waitmovement 0
 # 21 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
+	msgbox PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_1
 # 22 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement 3, ProfessorIntro2
+	waitmessage
 # 23 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmovement 0
+	applymovement 3, ProfessorIntro2
 # 24 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_2
-# 25 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
-# 26 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_3
-# 27 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
-# 28 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement 3, ProfessorIntro3
-# 29 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerIntro
-# 30 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	waitmovement 0
-# 31 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_4
-# 32 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setvar VAR_PACIFIDLOG_TOWN_STATE, 2
-# 33 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 25 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	msgbox PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_2
+# 26 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	waitmessage
+# 27 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	msgbox PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_3
+# 28 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitmessage
+# 29 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	applymovement 3, ProfessorIntro3
+# 30 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerIntro
+# 31 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitmovement 0
+# 32 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	msgbox PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_4
+# 33 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	setvar VAR_PACIFIDLOG_TOWN_STATE, 2
 # 34 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitmessage
+# 35 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	releaseall
 	return
 
 
 PacifidlogTown_ProfessorLab_EventScript_LeftBall::
-# 39 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	lockall
 # 40 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	lockall
+# 41 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	goto_if_unset FLAG_LEFT_STARTER, PacifidlogTown_ProfessorLab_EventScript_LeftBall_4
 PacifidlogTown_ProfessorLab_EventScript_LeftBall_3:
-# 60 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 61 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	msgbox PacifidlogTown_ProfessorLab_EventScript_LeftBall_Text_2
 PacifidlogTown_ProfessorLab_EventScript_LeftBall_1:
-# 62 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
 # 63 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitmessage
+# 64 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	releaseall
 	end
 
 PacifidlogTown_ProfessorLab_EventScript_LeftBall_2:
-# 41 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	showmonpic SPECIES_PIPLUP, 10, 3
 # 42 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_LeftBall_Text_0, MSGBOX_YESNO
+	showmonpic SPECIES_PIPLUP, 10, 3
 # 43 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	msgbox PacifidlogTown_ProfessorLab_EventScript_LeftBall_Text_0, MSGBOX_YESNO
+# 44 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq PacifidlogTown_ProfessorLab_EventScript_LeftBall_9
-# 56 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 57 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	hidemonpic
 	goto PacifidlogTown_ProfessorLab_EventScript_LeftBall_1
 
 PacifidlogTown_ProfessorLab_EventScript_LeftBall_4:
-# 40 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 41 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	goto_if_unset FLAG_MID_STARTER, PacifidlogTown_ProfessorLab_EventScript_LeftBall_6
 	goto PacifidlogTown_ProfessorLab_EventScript_LeftBall_3
 
 PacifidlogTown_ProfessorLab_EventScript_LeftBall_6:
-# 40 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 41 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	goto_if_unset FLAG_RIGHT_STARTER, PacifidlogTown_ProfessorLab_EventScript_LeftBall_2
 	goto PacifidlogTown_ProfessorLab_EventScript_LeftBall_3
 
 PacifidlogTown_ProfessorLab_EventScript_LeftBall_9:
-# 44 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	playfanfare MUS_OBTAIN_BADGE
 # 45 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_LeftBall_Text_1
+	playfanfare MUS_OBTAIN_BADGE
 # 46 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	givemon SPECIES_PIPLUP, 5
+	msgbox PacifidlogTown_ProfessorLab_EventScript_LeftBall_Text_1
 # 47 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	removeobject 4
+	givemon SPECIES_PIPLUP, 5
 # 48 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setflag FLAG_LEFT_STARTER
+	removeobject 4
 # 49 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_LEFT_STARTER
 # 50 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setvar VAR_STARTER_MON, 0
+	setflag FLAG_SYS_POKEMON_GET
 # 51 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setvar VAR_PACIFIDLOG_TOWN_STATE, 3
+	setvar VAR_STARTER_MON, 0
 # 52 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitfanfare
+	setvar VAR_PACIFIDLOG_TOWN_STATE, 3
 # 53 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitfanfare
+# 54 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	call NicknamePartyMon
 	goto PacifidlogTown_ProfessorLab_EventScript_LeftBall_1
 
 
 PacifidlogTown_ProfessorLab_EventScript_MiddleBall::
-# 68 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	lockall
 # 69 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	lockall
+# 70 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	goto_if_unset FLAG_LEFT_STARTER, PacifidlogTown_ProfessorLab_EventScript_MiddleBall_4
 PacifidlogTown_ProfessorLab_EventScript_MiddleBall_3:
-# 89 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 90 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	msgbox PacifidlogTown_ProfessorLab_EventScript_LeftBall_Text_2
 PacifidlogTown_ProfessorLab_EventScript_MiddleBall_1:
-# 91 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
 # 92 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitmessage
+# 93 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	releaseall
 	end
 
 PacifidlogTown_ProfessorLab_EventScript_MiddleBall_2:
-# 70 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	showmonpic SPECIES_OSHAWOTT, 10, 3
 # 71 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_MiddleBall_Text_0, MSGBOX_YESNO
+	showmonpic SPECIES_OSHAWOTT, 10, 3
 # 72 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	msgbox PacifidlogTown_ProfessorLab_EventScript_MiddleBall_Text_0, MSGBOX_YESNO
+# 73 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq PacifidlogTown_ProfessorLab_EventScript_MiddleBall_9
-# 85 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 86 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	hidemonpic
 	goto PacifidlogTown_ProfessorLab_EventScript_MiddleBall_1
 
 PacifidlogTown_ProfessorLab_EventScript_MiddleBall_4:
-# 69 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 70 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	goto_if_unset FLAG_MID_STARTER, PacifidlogTown_ProfessorLab_EventScript_MiddleBall_6
 	goto PacifidlogTown_ProfessorLab_EventScript_MiddleBall_3
 
 PacifidlogTown_ProfessorLab_EventScript_MiddleBall_6:
-# 69 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 70 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	goto_if_unset FLAG_RIGHT_STARTER, PacifidlogTown_ProfessorLab_EventScript_MiddleBall_2
 	goto PacifidlogTown_ProfessorLab_EventScript_MiddleBall_3
 
 PacifidlogTown_ProfessorLab_EventScript_MiddleBall_9:
-# 73 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	playfanfare MUS_OBTAIN_BADGE
 # 74 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_MiddleBall_Text_1
+	playfanfare MUS_OBTAIN_BADGE
 # 75 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	givemon SPECIES_OSHAWOTT, 5
+	msgbox PacifidlogTown_ProfessorLab_EventScript_MiddleBall_Text_1
 # 76 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	removeobject 5
+	givemon SPECIES_OSHAWOTT, 5
 # 77 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setflag FLAG_MID_STARTER
+	removeobject 5
 # 78 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_MID_STARTER
 # 79 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setvar VAR_STARTER_MON, 1
+	setflag FLAG_SYS_POKEMON_GET
 # 80 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setvar VAR_PACIFIDLOG_TOWN_STATE, 3
+	setvar VAR_STARTER_MON, 1
 # 81 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitfanfare
+	setvar VAR_PACIFIDLOG_TOWN_STATE, 3
 # 82 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitfanfare
+# 83 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	call NicknamePartyMon
 	goto PacifidlogTown_ProfessorLab_EventScript_MiddleBall_1
 
 
 PacifidlogTown_ProfessorLab_EventScript_RightBall::
-# 97 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	lockall
 # 98 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	lockall
+# 99 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	goto_if_unset FLAG_LEFT_STARTER, PacifidlogTown_ProfessorLab_EventScript_RightBall_4
 PacifidlogTown_ProfessorLab_EventScript_RightBall_3:
-# 118 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 119 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	msgbox PacifidlogTown_ProfessorLab_EventScript_LeftBall_Text_2
 PacifidlogTown_ProfessorLab_EventScript_RightBall_1:
-# 120 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
 # 121 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitmessage
+# 122 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	releaseall
 	end
 
 PacifidlogTown_ProfessorLab_EventScript_RightBall_2:
-# 99 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	showmonpic SPECIES_POPPLIO, 10, 3
 # 100 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_RightBall_Text_0, MSGBOX_YESNO
+	showmonpic SPECIES_POPPLIO, 10, 3
 # 101 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	msgbox PacifidlogTown_ProfessorLab_EventScript_RightBall_Text_0, MSGBOX_YESNO
+# 102 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq PacifidlogTown_ProfessorLab_EventScript_RightBall_9
-# 114 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 115 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	hidemonpic
 	goto PacifidlogTown_ProfessorLab_EventScript_RightBall_1
 
 PacifidlogTown_ProfessorLab_EventScript_RightBall_4:
-# 98 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 99 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	goto_if_unset FLAG_MID_STARTER, PacifidlogTown_ProfessorLab_EventScript_RightBall_6
 	goto PacifidlogTown_ProfessorLab_EventScript_RightBall_3
 
 PacifidlogTown_ProfessorLab_EventScript_RightBall_6:
-# 98 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 99 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	goto_if_unset FLAG_RIGHT_STARTER, PacifidlogTown_ProfessorLab_EventScript_RightBall_2
 	goto PacifidlogTown_ProfessorLab_EventScript_RightBall_3
 
 PacifidlogTown_ProfessorLab_EventScript_RightBall_9:
-# 102 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	playfanfare MUS_OBTAIN_BADGE
 # 103 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_RightBall_Text_1
+	playfanfare MUS_OBTAIN_BADGE
 # 104 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	givemon SPECIES_POPPLIO, 5
+	msgbox PacifidlogTown_ProfessorLab_EventScript_RightBall_Text_1
 # 105 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	removeobject 6
+	givemon SPECIES_POPPLIO, 5
 # 106 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setflag FLAG_RIGHT_STARTER
+	removeobject 6
 # 107 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_RIGHT_STARTER
 # 108 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setvar VAR_STARTER_MON, 2
+	setflag FLAG_SYS_POKEMON_GET
 # 109 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setvar VAR_PACIFIDLOG_TOWN_STATE, 3
+	setvar VAR_STARTER_MON, 2
 # 110 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitfanfare
+	setvar VAR_PACIFIDLOG_TOWN_STATE, 3
 # 111 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitfanfare
+# 112 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	call NicknamePartyMon
 	goto PacifidlogTown_ProfessorLab_EventScript_RightBall_1
 
 
 PacifidlogTown_ProfessorLab_EventScript_Professor::
-# 126 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	lock
 # 127 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	faceplayer
+	lock
 # 128 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_Professor_Text_0
+	faceplayer
 # 129 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	msgbox PacifidlogTown_ProfessorLab_EventScript_Professor_Text_0
+# 130 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	release
 	return
 
 
 PacifidlogTown_ProfessorLab_EventScript_Aide1::
-# 133 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	lock
 # 134 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	faceplayer
+	lock
 # 135 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_Aide1_Text_0
+	faceplayer
 # 136 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	msgbox PacifidlogTown_ProfessorLab_EventScript_Aide1_Text_0
+# 137 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	release
 	return
 
 
 PacifidlogTown_ProfessorLab_EventScript_Aide2::
-# 140 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	lock
 # 141 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	faceplayer
+	lock
 # 142 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_Aide2_Text_0
+	faceplayer
 # 143 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	msgbox PacifidlogTown_ProfessorLab_EventScript_Aide2_Text_0
+# 144 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	release
 	return
 
 
 NicknamePartyMon::
-# 147 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
 # 148 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	hidemonpic
+	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
 # 149 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	hidemonpic
+# 150 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknamePartyMon_1
 	return
 
 NicknamePartyMon_1:
-# 150 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	call Common_EventScript_GetGiftMonPartySlot
 # 151 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	call Common_EventScript_GetGiftMonPartySlot
+# 152 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	return
 
 
 Pacifidlogtown_ProfessorLab_EventScript_DontLeave::
-# 156 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	lockall
 # 157 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox Pacifidlogtown_ProfessorLab_EventScript_DontLeave_Text_0
+	lockall
 # 158 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
+	msgbox Pacifidlogtown_ProfessorLab_EventScript_DontLeave_Text_0
 # 159 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Playerup
+	waitmessage
 # 160 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Playerup
 # 161 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitmovement 0
+# 162 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	releaseall
 	return
 
 
 PacifidlogTown_ProfessorLab_EventScript_TriggerRival_4::
-# 165 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	call PacifidlogTown_ProfessorLab_EventScript_RivalIntro
 # 166 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, faceright
+	call PacifidlogTown_ProfessorLab_EventScript_RivalIntro
 # 167 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_TriggerRival_4_Text_0
+	applymovement OBJ_EVENT_ID_PLAYER, faceright
 # 168 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
+	msgbox PacifidlogTown_ProfessorLab_EventScript_TriggerRival_4_Text_0
 # 169 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement 7, rivalmove
+	waitmessage
 # 170 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, uptwo
+	applymovement 7, rivalmove
 # 171 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmovement 7
+	applymovement OBJ_EVENT_ID_PLAYER, uptwo
 # 172 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	call PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection
+	waitmovement 7
 # 173 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	call PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection
+# 174 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	releaseall
 	return
 
 
 PacifidlogTown_ProfessorLab_EventScript_TriggerRival_5::
-# 177 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	call PacifidlogTown_ProfessorLab_EventScript_RivalIntro
 # 178 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, facedown
+	call PacifidlogTown_ProfessorLab_EventScript_RivalIntro
 # 179 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_TriggerRival_4_Text_0
+	applymovement OBJ_EVENT_ID_PLAYER, facedown
 # 180 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
+	msgbox PacifidlogTown_ProfessorLab_EventScript_TriggerRival_4_Text_0
 # 181 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement 7, rivalmove
+	waitmessage
 # 182 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, leftup
+	applymovement 7, rivalmove
 # 183 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmovement 7
+	applymovement OBJ_EVENT_ID_PLAYER, leftup
 # 184 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	call PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection
+	waitmovement 7
 # 185 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	call PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection
+# 186 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	releaseall
 	return
 
 
 PacifidlogTown_ProfessorLab_EventScript_TriggerRival_6::
-# 189 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	call PacifidlogTown_ProfessorLab_EventScript_RivalIntro
 # 190 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, facedown
+	call PacifidlogTown_ProfessorLab_EventScript_RivalIntro
 # 191 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_TriggerRival_4_Text_0
+	applymovement OBJ_EVENT_ID_PLAYER, facedown
 # 192 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
+	msgbox PacifidlogTown_ProfessorLab_EventScript_TriggerRival_4_Text_0
 # 193 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement 7, rivalmove
+	waitmessage
 # 194 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, waitleft
+	applymovement 7, rivalmove
 # 195 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmovement 7
+	applymovement OBJ_EVENT_ID_PLAYER, waitleft
 # 196 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	call PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection
+	waitmovement 7
 # 197 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	call PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection
+# 198 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	releaseall
 	return
 
 
 PacifidlogTown_ProfessorLab_EventScript_TriggerRival_7::
-# 201 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	call PacifidlogTown_ProfessorLab_EventScript_RivalIntro
 # 202 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, faceleft
+	call PacifidlogTown_ProfessorLab_EventScript_RivalIntro
 # 203 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_TriggerRival_4_Text_0
+	applymovement OBJ_EVENT_ID_PLAYER, faceleft
 # 204 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
+	msgbox PacifidlogTown_ProfessorLab_EventScript_TriggerRival_4_Text_0
 # 205 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement 7, rivalmove
+	waitmessage
 # 206 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, left3up
+	applymovement 7, rivalmove
 # 207 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmovement 7
+	applymovement OBJ_EVENT_ID_PLAYER, left3up
 # 208 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	call PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection
+	waitmovement 7
 # 209 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	call PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection
+# 210 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	releaseall
 	return
 
 
 PacifidlogTown_ProfessorLab_EventScript_RivalIntro::
-# 212 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	lockall
 # 213 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	addobject 7
+	lockall
 # 214 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalIntro_Text_0
+	addobject 7
 # 215 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
+	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalIntro_Text_0
 # 216 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitmessage
+# 217 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	applymovement 7, facetheplayer
 	return
 
 
 PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection::
-# 221 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	lockall
 # 222 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_0
+	lockall
 # 223 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
+	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_0
 # 224 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_1
+	waitmessage
 # 225 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_1
+# 226 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	compare VAR_STARTER_MON, 0
 	goto_if_eq PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_1
 # 240 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	compare VAR_STARTER_MON, 1
 	goto_if_eq PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_2
-# 254 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 253 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	applymovement 7, toleftmon
+# 254 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitmovement 0
 # 255 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmovement 0
+	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_4
 # 256 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_5
-# 257 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	removeobject 4
-# 258 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 257 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	setflag FLAG_LEFT_STARTER
-# 259 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 258 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	waitmessage
-# 260 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 259 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	applymovement 7, right2
+# 260 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitmovement 0
 # 261 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmovement 0
-# 262 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	applymovement 7, facetheplayer
-# 263 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 262 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	waitmovement 0
-# 264 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_3
-# 265 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 263 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	setflag FLAG_TEMP_CONTINUE_ON_LOSS
-# 266 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	trainerbattle_single TRAINER_LAB_RIVAL_POPPLIO, LabRival_Intro, LabRival_Outro
+# 264 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	trainerbattle_single TRAINER_LAB_RIVAL_POPPLIO, LabRival_Intro, LabRival_Outro, PacifidlogTown_ProfessorLab_Eventscript_RivalBattleWon
 	return
 
 PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_1:
-# 226 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement 7, tomiddlemon
 # 227 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmovement 0
+	applymovement 7, tomiddlemon
 # 228 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_2
+	waitmovement 0
 # 229 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	removeobject 5
+	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_2
 # 230 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	setflag FLAG_MID_STARTER
+	removeobject 5
 # 231 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmessage
+	setflag FLAG_MID_STARTER
 # 232 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement 7, right1
+	waitmessage
 # 233 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	waitmovement 0
+	applymovement 7, right1
 # 234 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	applymovement 7, facetheplayer
-# 235 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	waitmovement 0
+# 235 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	applymovement 7, facetheplayer
 # 236 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_3
+	waitmovement 0
 # 237 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	setflag FLAG_TEMP_CONTINUE_ON_LOSS
 # 238 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	trainerbattle_single TRAINER_LAB_RIVAL_PIPLUP, LabRival_Intro, LabRival_Outro
+	trainerbattle_single TRAINER_LAB_RIVAL_PIPLUP, LabRival_Intro, LabRival_Outro, PacifidlogTown_ProfessorLab_Eventscript_RivalBattleWon
 	return
 
 PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_2:
@@ -502,7 +500,7 @@ PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_2:
 # 242 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	waitmovement 0
 # 243 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_4
+	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_3
 # 244 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	removeobject 6
 # 245 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
@@ -514,38 +512,40 @@ PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_2:
 # 248 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	waitmovement 0
 # 249 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_3
-# 250 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	setflag FLAG_TEMP_CONTINUE_ON_LOSS
-# 251 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	trainerbattle_single TRAINER_LAB_RIVAL_OSHAWOTT, LabRival_Intro, LabRival_Outro
+# 250 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	trainerbattle_single TRAINER_LAB_RIVAL_OSHAWOTT, LabRival_Intro, LabRival_Outro, PacifidlogTown_ProfessorLab_Eventscript_RivalBattleWon
 	return
 
 
-# 272 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 270 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 ProfessorIntro1:
-# 273 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 271 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_down
-# 274 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 272 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_right
-# 274 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 272 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_right
-# 275 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 273 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_up
 	step_end
 
-# 278 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 276 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 ProfessorIntro2:
-# 279 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 277 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
-# 279 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 277 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
-# 280 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 278 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 283 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 281 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 ProfessorIntro3:
+# 282 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_up
+# 283 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_left
 # 284 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 # 285 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
@@ -553,305 +553,303 @@ ProfessorIntro3:
 # 286 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 # 287 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_left
-# 288 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_up
-# 289 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_down
 	step_end
 
-# 292 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 290 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 PlayerIntro:
-# 293 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 291 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
-# 293 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 291 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
-# 294 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 292 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
-# 294 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 292 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
-# 295 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 293 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 298 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 296 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 Playerup:
-# 299 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 297 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 302 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 300 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 facetheplayer:
-# 303 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 301 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_player
 	step_end
 
-# 306 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 304 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 faceright:
-# 307 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 305 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_right
 	step_end
 
-# 310 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 308 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 facedown:
-# 311 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 309 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_down
 	step_end
 
-# 314 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 312 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 faceleft:
-# 315 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 313 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_left
 	step_end
 
-# 318 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 316 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 rivalmove:
-# 319 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 317 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
-# 319 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 317 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
-# 319 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 317 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
-# 320 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 318 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
-# 320 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 318 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
-# 321 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 319 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	face_up
 	step_end
 
-# 324 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 322 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 uptwo:
-# 325 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 323 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
-# 325 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 323 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 328 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 326 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 leftup:
-# 329 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 327 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
-# 330 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 328 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 333 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 331 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 waitleft:
-# 334 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 332 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	delay_16
-# 335 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 333 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
-# 335 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 333 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
+# 334 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	walk_up
+	step_end
+
 # 336 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	walk_up
-	step_end
-
-# 338 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 left3up:
-# 339 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 337 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
-# 339 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 337 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
-# 339 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 337 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
-# 340 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 338 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
-# 340 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 338 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 343 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 341 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 toleftmon:
-# 344 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 342 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_left
-# 345 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 343 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 348 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 346 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 tomiddlemon:
-# 349 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 347 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 352 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 350 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 torightmon:
-# 353 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 351 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_right
-# 354 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 352 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_up
 	step_end
 
-# 357 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 355 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 right2:
-# 358 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 356 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_right
-# 358 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 356 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_right
 	step_end
 
-# 361 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 359 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 right1:
-# 362 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 360 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	walk_right
 	step_end
 
-PacifidlogTown_ProfessorLab_Eventscript_PostBattleRival::
+PacifidlogTown_ProfessorLab_Eventscript_RivalBattleWon::
+# 364 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	msgbox PacifidlogTown_ProfessorLab_Eventscript_RivalBattleWon_Text_0
+# 365 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	clearflag FLAG_TEMP_CONTINUE_ON_LOSS
 # 366 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	goto_if_set FLAG_TEMP_PLAYER_LOST, PacifidlogTown_ProfessorLab_Eventscript_PostBattleRival_2
-# 371 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_Eventscript_PostBattleRival_Text_1
-PacifidlogTown_ProfessorLab_Eventscript_PostBattleRival_1:
-# 373 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	setvar VAR_PACIFIDLOG_TOWN_STATE, 4
-# 374 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 367 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	releaseall
 	return
 
-PacifidlogTown_ProfessorLab_Eventscript_PostBattleRival_2:
-# 367 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	msgbox PacifidlogTown_ProfessorLab_Eventscript_PostBattleRival_Text_0
-# 368 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	clearflag FLAG_TEMP_PLAYER_LOST
-	goto PacifidlogTown_ProfessorLab_Eventscript_PostBattleRival_1
+
+PacifidlogTown_ProfessorLab_EventScript_RivalBattleLoss::
+# 370 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	msgbox PacifidlogTown_ProfessorLab_EventScript_RivalBattleLoss_Text_0
+# 371 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	waitmessage
+# 372 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	setvar VAR_LOST_BATTLE, 0
+# 373 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	clearflag FLAG_TEMP_CONTINUE_ON_LOSS
+# 374 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	setvar VAR_PACIFIDLOG_TOWN_STATE, 4
+# 375 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	releaseall
+	return
 
 
 PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_0:
-# 16 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 17 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Alkalinity and turbidity readings are\n"
 	.string "normal...$"
 
 PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_1:
-# 20 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 21 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Looks like there's some minor bleaching\n"
 	.string "in the colony...$"
 
 PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_2:
-# 24 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 25 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Oh, {PLAYER}! There you are!$"
 
 PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_3:
-# 26 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 27 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Come here, I want to give you\n"
 	.string "something!$"
 
 PacifidlogTown_ProfessorLab_EventScript_EveryFrame_Text_4:
-# 31 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 32 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "There are three Poké Balls here, each\n"
 	.string "containing a different Pokémon. I want\l"
 	.string "you to choose one!$"
 
 PacifidlogTown_ProfessorLab_EventScript_LeftBall_Text_0:
-# 42 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 43 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Do you want to choose Piplup?$"
 
 PacifidlogTown_ProfessorLab_EventScript_LeftBall_Text_1:
-# 45 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 46 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "You received Piplup!$"
 
 PacifidlogTown_ProfessorLab_EventScript_LeftBall_Text_2:
-# 60 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 61 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "You already have a starter Pokémon.$"
 
 PacifidlogTown_ProfessorLab_EventScript_MiddleBall_Text_0:
-# 71 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 72 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Do you want to choose Oshawott?$"
 
 PacifidlogTown_ProfessorLab_EventScript_MiddleBall_Text_1:
-# 74 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 75 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "You received Oshawott!$"
 
 PacifidlogTown_ProfessorLab_EventScript_RightBall_Text_0:
-# 100 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 101 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Do you want to choose Popplio?$"
 
 PacifidlogTown_ProfessorLab_EventScript_RightBall_Text_1:
-# 103 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 104 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "You received Popplio!$"
 
 PacifidlogTown_ProfessorLab_EventScript_Professor_Text_0:
-# 128 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 129 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Hello {PLAYER}! The Corsola seem to\n"
 	.string "be doing well today!$"
 
 PacifidlogTown_ProfessorLab_EventScript_Aide1_Text_0:
-# 135 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 136 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "I know the work we do here is important\n"
 	.string "to keep the Corsola healthy, but I wish\l"
 	.string "the seawater didn't spray all over my\l"
 	.string "papers...$"
 
 PacifidlogTown_ProfessorLab_EventScript_Aide2_Text_0:
-# 142 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 143 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "A long time ago, Mareanie didn't live in\n"
 	.string "Hoenn. But now, they've been spread\l"
 	.string "head to Pacifidlog, and pose a real\l"
 	.string "threat to our Corsola colony.$"
 
 NicknamePartyMon_Text_0:
-# 147 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 148 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Would you like to give it a nickname?$"
 
 Pacifidlogtown_ProfessorLab_EventScript_DontLeave_Text_0:
-# 157 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 158 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "You can't leave yet, {PLAYER}! You\n"
 	.string "need to choose a starter Pokémon\l"
 	.string "first!$"
 
 PacifidlogTown_ProfessorLab_EventScript_TriggerRival_4_Text_0:
-# 167 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 168 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Oh, {PLAYER}, looks like you beat me\n"
 	.string "here!$"
 
 PacifidlogTown_ProfessorLab_EventScript_RivalIntro_Text_0:
-# 214 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 215 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Ah, sorry I'm late Professor!$"
 
 PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_0:
-# 222 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 223 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Oh, RIVAL, you can choose a starter\n"
 	.string "Pokémon too!$"
 
 PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_1:
-# 224 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 225 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Hmm... I think I'll take...$"
 
 PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_2:
-# 228 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 229 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Oshawott!$"
 
 PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_3:
-# 236 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	.string "Well {PLAYER}, we've both got a\n"
-	.string "Pokémon now! You know what that means,\l"
-	.string "right?$"
-
-PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_4:
 # 243 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Popplio!$"
 
-PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_5:
-# 256 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+PacifidlogTown_ProfessorLab_EventScript_RivalStarterSelection_Text_4:
+# 255 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Piplup!$"
 
-PacifidlogTown_ProfessorLab_Eventscript_PostBattleRival_Text_0:
-# 367 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	.string "Yay, I won!$"
-
-PacifidlogTown_ProfessorLab_Eventscript_PostBattleRival_Text_1:
-# 371 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+PacifidlogTown_ProfessorLab_Eventscript_RivalBattleWon_Text_0:
+# 364 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "I'll get you next time!$"
+
+PacifidlogTown_ProfessorLab_EventScript_RivalBattleLoss_Text_0:
+# 370 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+	.string "Yes, I choose the better Pokémon!$"
 
 LabRival_Intro::
 # 377 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
-	.string "Oh hi {PLAYER}! You have a Pokémon now, right? Let's battle!$"
+	.string "Well {PLAYER}, we've both got a Pokémon now! You know what that means, right?$"
 
 LabRival_Outro::
-# 381 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 382 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "Wow, you're really good! I need to train harder!$"
 
 LabRival_PostBattle::
-# 385 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
+# 386 "data/maps/PacifidlogTown_ProfessorLab/scripts.pory"
 	.string "You'll have no trouble making it to Ever Grande City!$"
